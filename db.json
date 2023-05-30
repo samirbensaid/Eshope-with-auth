@@ -1,0 +1,212 @@
+{
+  "products": [
+    {
+      "albumId": 1,
+      "id": 3,
+      "title": "officia porro iure quia iusto qui ipsa ut modi",
+      "url": "https://picsum.photos/id/80/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culp",
+      "thumbnailUrl": "https://picsum.photos/id/80/500"
+    },
+    {
+      "albumId": 1,
+      "id": 6,
+      "title": "accusamus ea aliquid et amet sequi nemo",
+      "url": "https://picsum.photos/id/84/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
+    },
+    {
+      "albumId": 1,
+      "id": 7,
+      "title": "officia delectus consequatur vero aut veniam explicabo molestias",
+      "url": "https://picsum.photos/id/87/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc"
+    },
+    {
+      "albumId": 1,
+      "id": 8,
+      "title": "aut porro officiis laborum odit ea laudantium corporis",
+      "url": "https://picsum.photos/id/88/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/54176f"
+    },
+    {
+      "albumId": 1,
+      "id": 10,
+      "title": "beatae et provident et ut vel",
+      "url": "https://picsum.photos/id/90/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/810b14"
+    },
+    {
+      "albumId": 1,
+      "id": 11,
+      "title": "nihil at amet non hic quia que",
+      "url": "https://picsum.photos/id/101/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://picsum.photos/id/101/500"
+    },
+    {
+      "albumId": 1,
+      "id": 13,
+      "title": "repudiandae iusto deleniti rerum",
+      "url": "https://picsum.photos/id/110/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/197d29"
+    },
+    {
+      "albumId": 1,
+      "id": 14,
+      "title": "est necessitatibus architecto ut laborum",
+      "url": "https://picsum.photos/id/112/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/61a65"
+    },
+    {
+      "albumId": 1,
+      "id": 15,
+      "title": "harum dicta similique quis dolore earum ex qui",
+      "url": "https://picsum.photos/id/117/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/f9cee5"
+    },
+    {
+      "albumId": 1,
+      "id": 16,
+      "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
+      "url": "https://picsum.photos/id/107/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e"
+    },
+    {
+      "albumId": 1,
+      "id": 17,
+      "title": "natus doloribus necessitatibus ipsa",
+      "url": "https://picsum.photos/id/125/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/9c184f"
+    },
+    {
+      "albumId": 1,
+      "id": 18,
+      "title": "laboriosam odit nam necessitatibus et illum dolores reiciendis",
+      "url": "https://picsum.photos/id/122/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/1fe46f"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Samir",
+      "email": "Sincere@april.biz",
+      "password": "123456789",
+      "phone": "1-770-736-8031 x56442",
+      "role": [
+        "admin"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "email": "Sincere@april.biz",
+      "password": "123456789",
+      "phone": "1-770-736-8031 x56442",
+      "role": [
+        "user"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "email": "Sincere@april.biz",
+      "password": "123456789",
+      "phone": "1-770-736-8031 x56442",
+      "role": [
+        "user"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "email": "Sincere@april.biz",
+      "password": "123456789",
+      "phone": "1-770-736-8031 x56442",
+      "role": [
+        "admin"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "email": "Sincere@april.biz",
+      "password": "123456789",
+      "phone": "1-770-736-8031 x56442",
+      "role": [
+        "admin"
+      ]
+    },
+    {
+      "name": "samir",
+      "email": "samir.ben.said90@gmail.com",
+      "phone": "12345678",
+      "password": "0000",
+      "role": [
+        "user"
+      ],
+      "id": 6
+    },
+    {
+      "name": "ahmed",
+      "email": "s.ferhi@ewm.swiss",
+      "phone": "12345678",
+      "password": "1212121",
+      "role": [
+        "admin"
+      ],
+      "id": 7
+    },
+    {
+      "name": "tfgbgfbdsgf",
+      "email": "s.ferhi@ewm.swiss",
+      "phone": "12345678",
+      "password": "00000",
+      "role": [
+        "user"
+      ],
+      "id": 8
+    },
+    {
+      "name": "ahmed",
+      "email": "samir.ben.said90@gmail.com",
+      "phone": "12345678",
+      "password": "123",
+      "role": [
+        "admin"
+      ],
+      "id": 9
+    },
+    {
+      "name": "ahmed",
+      "email": "samir.ben.said90@gmail.com",
+      "phone": "12345678",
+      "password": "0000",
+      "role": [
+        "user"
+      ],
+      "id": 10
+    },
+    {
+      "name": "ahmed",
+      "email": "sair.said90@gmail.com",
+      "phone": "12345678",
+      "password": "12345678",
+      "role": [
+        "user"
+      ],
+      "id": 11
+    }
+  ]
+}
