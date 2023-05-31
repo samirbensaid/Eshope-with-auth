@@ -47,7 +47,8 @@ export default function Products() {
                   Name
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  image url
+                price
+
                 </th>
 
                 <th scope="col" className="px-6 py-3">
@@ -75,7 +76,7 @@ export default function Products() {
                         </div>
                       </div>
                     </td>
-                    <td className="px-6 py-4">{article.thumbnailUrl}</td>
+                    <td className="px-6 py-4 font-bold">{article.price} $</td>
 
                     <td className="px-6 py-4 flex gap-6">
                       <Link to={"/dashboard/editarticle/" + article.id}>

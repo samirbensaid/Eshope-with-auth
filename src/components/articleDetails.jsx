@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
 import useBasket from "./zustand/zustandBasket";
+import { toast, Toaster } from "react-hot-toast";
 // import { useNavigate } from "react-router-dom";
 export default function ArticleDetails() {
   const { add } = useBasket();
@@ -20,9 +21,9 @@ export default function ArticleDetails() {
     fetchData();
   }, []);
 
-
   return (
     <>
+      <Toaster position="bottom-right" reverseOrder={false} />
       <section className="text-gray-700 body-font overflow-hidden bg-white">
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
@@ -133,9 +134,10 @@ export default function ArticleDetails() {
                   </a>
                 </span>
               </div>
-              <p className="leading-relaxed">{data.description}</p>
-
+              <p className="leading-relaxed pb-4">{data.description}</p>
+              <p className="font-bold text-3xl">Price(u) : {data.price} $</p>
               <div className="flex gap-8 pt-8">
+              
                 <p className="font-bold text-4xl">{count}</p>
                 <button
                   onClick={() => {
@@ -161,6 +163,18 @@ export default function ArticleDetails() {
                       id: data.id,
                       img: data.url,
                       count: count,
+                      price: data.price,
+                    });
+                    toast.success("Product Adding To Cart.", {
+                      style: {
+                        border: "1px solid green",
+                        padding: "30px",
+                        color: "green",
+                      },
+                      iconTheme: {
+                        primary: "green",
+                        secondary: "#FFFAEE",
+                      },
                     });
                   }}
                   className="flex gap-3 ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded"

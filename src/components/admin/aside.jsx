@@ -11,18 +11,20 @@ import ModalDialog from "@mui/joy/ModalDialog";
 //import DeleteForever from "@mui/icons-material/DeleteForever";
 import WarningRoundedIcon from "@mui/icons-material/WarningRounded";
 import Typography from "@mui/joy/Typography";
+import useAuth from "../zustand/useAuth";
 
 export default function Aside() {
   const [open, setOpen] = useState(false);
+  const {  removeUser } = useAuth();
 
   const logout = async () => {
-    let token = JSON.parse(window.localStorage.getItem("token"));
-    console.log(token);
+    let userData = JSON.parse(window.localStorage.getItem("user"));
+    console.log(userData.token);
     const config = {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${userData.token}`,
       },
     };
 
@@ -31,7 +33,7 @@ export default function Aside() {
       null,
       config
     );
-
+    removeUser();
     window.location.href = "/signin";
     console.log(response.data);
   };
@@ -140,7 +142,6 @@ export default function Aside() {
                 Logout
               </span>
             </Link>
-           
           </li>
         </ul>
       </div>

@@ -36,10 +36,10 @@ export default function SignIn() {
       );
       console.log(response);
       const userData = {
-        token: response.data.token,
         name: response.data.user.firstname,
         email: response.data.user.email,
         phone: response.data.user.phone,
+        token: response.data.token,
         roles: response.data.user.roles,
       };
 
@@ -66,7 +66,7 @@ export default function SignIn() {
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h5" color="secondary">
             Sign in
           </Typography>
           <Box
@@ -76,6 +76,7 @@ export default function SignIn() {
             onSubmit={handleSubmit(onSubmit)}
           >
             <TextField
+              color="secondary"
               margin="normal"
               required
               fullWidth
@@ -83,10 +84,11 @@ export default function SignIn() {
               label="Email Address"
               name="email"
               autoComplete="email"
-              autoFocus
+              focused
               {...register("email")}
             />
             <TextField
+              color="secondary"
               margin="normal"
               required
               fullWidth
@@ -95,10 +97,11 @@ export default function SignIn() {
               type="password"
               id="password"
               autoComplete="current-password"
+              focused
               {...register("password")}
             />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+            <FormControlLabel sx={{ color:"#9C27B0"}}
+              control={<Checkbox value="remember" color="primary" sx={{ color:"#9C27B0"}}/>}
               label="Remember me"
             />
             <Button
@@ -106,16 +109,17 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              
             >
               Sign In
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link to="#" variant="body2">
+              <Grid item xs sx={{ color:"#9C27B0"}}>
+                <Link to="#" variant="body2" color="secondary">
                   Forgot password?
                 </Link>
               </Grid>
-              <Grid item>
+              <Grid item sx={{ color:"#9C27B0"}}>
                 <Link to="/signup" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>

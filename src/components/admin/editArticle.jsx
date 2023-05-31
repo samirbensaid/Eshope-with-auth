@@ -20,6 +20,7 @@ export default function EditArticle() {
   }, []);
   useEffect(() => {
     setValue("title", data.title);
+    setValue("price", data.price);
     setValue("img", data.url);
     setValue("description", data.description);
   }, [data]);
@@ -31,6 +32,7 @@ export default function EditArticle() {
       url: formData.img,
       description: formData.description,
       thumbnailUrl: formData.img,
+      price:formData.price
     };
     try {
       await axios.patch("http://localhost:3000/products/" + id, newProduct);
@@ -57,6 +59,21 @@ export default function EditArticle() {
           id="small-input"
           // name="title"
           {...register("title")}
+          className="block w-full p-2 mb-5 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
+
+        <label
+          htmlFor="small-input"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >
+          Price
+        </label>
+        <input
+        placeholder="0"
+          type="number"
+          id="small-input"
+          //name="title"
+          {...register("price")} 
           className="block w-full p-2 mb-5 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
         <label

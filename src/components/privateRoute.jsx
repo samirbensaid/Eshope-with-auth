@@ -7,13 +7,13 @@ import useAuth from "./zustand/useAuth";
 export default function PrivateRoute() {
   const { user } = useAuth();
 
-  //   console.log(user);
-  //   if (user.token == undefined) {
-  //     return <Navigate to="/signin" />;
-  //   }
-  //   if (user.roles[0] != "ROLE_ADMIN") {
-  //     return <Navigate to="/" />;
-  //   }
+  console.log(user);
+  if (user.token == undefined) {
+    return <Navigate to="/signin" />;
+  }
+  if (user.roles[0] != "ROLE_ADMIN") {
+    return <Navigate to="/" />;
+  }
 
   return (
     <>

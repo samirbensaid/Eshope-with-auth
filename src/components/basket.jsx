@@ -11,16 +11,30 @@ import ModalDialog from "@mui/joy/ModalDialog";
 import DeleteForever from "@mui/icons-material/DeleteForever";
 import WarningRoundedIcon from "@mui/icons-material/WarningRounded";
 import Typography from "@mui/joy/Typography";
+import { toast, Toaster } from "react-hot-toast";
 
 export default function Basket() {
-  const { basket, reset, deleteOne, edit } = useBasket();
+  const { basket, reset, deleteOne, edit, calculeTotal } = useBasket();
 
   const [open, setOpen] = useState(false);
+  //const [totalPrice, setTotalPrice] = useState(0);
 
   //   const navigate = useNavigate();
 
+  // const calculeTotal = () => {
+  //   let total = 0;
+  //   basket.map((article) => {
+  //     total = total + parseInt(article.price) * parseInt(article.count);
+  //   });
+  //   setTotalPrice(total);
+  // };
+  // useEffect(() => {
+  //   calculeTotal();
+  // }, []);
+
   return (
     <div>
+      <Toaster position="bottom-right" reverseOrder={false} />
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         {basket.length > 0 ? (
           <div>
@@ -72,7 +86,14 @@ export default function Basket() {
                   >
                     Cancel
                   </Button>
-                  <Button variant="solid" color="danger" onClick={reset}>
+                  <Button
+                    variant="solid"
+                    color="danger"
+                    onClick={() => {
+                      reset();
+                      calculeTotal();
+                    }}
+                  >
                     Discard notes
                   </Button>
                 </Box>
@@ -90,6 +111,9 @@ export default function Basket() {
                     Product
                   </th>
                   <th scope="col" className="px-6 py-3">
+                    Price
+                  </th>
+                  <th scope="col" className="px-16 py-3">
                     Qty
                   </th>
 
@@ -110,6 +134,9 @@ export default function Basket() {
                       </td>
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                         {article.title}
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                        {article.price} $
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center space-x-3">
@@ -201,8 +228,20 @@ export default function Basket() {
                       <td className="px-6 py-4">
                         <button
                           onClick={() => {
+                            calculeTotal();
                             deleteOne(index);
                             // navigate("/basket");
+                            toast.error("Product deleted with succes.", {
+                              style: {
+                                border: "1px solid red",
+                                padding: "30px",
+                                color: "red",
+                              },
+                              iconTheme: {
+                                primary: "red",
+                                secondary: "#FFFAEE",
+                              },
+                            });
                           }}
                           className="font-medium text-red-600 dark:text-red-500 hover:underline"
                         >
@@ -212,7 +251,6 @@ export default function Basket() {
                     </tr>
                   );
                 })}
-                <tr></tr>
               </tbody>
             </table>
           </div>
@@ -221,6 +259,11 @@ export default function Basket() {
             List empty — check our website to find what you want !
           </Alert>
         )}
+      </div>
+      <div className="text-right">
+        <div className="font-bold text-2xl text-right mt-5 mr-5">
+          Total : {calculeTotal()} $
+        </div>
       </div>
     </div>
   );

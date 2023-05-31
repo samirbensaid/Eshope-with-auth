@@ -2,19 +2,12 @@
   "products": [
     {
       "albumId": 1,
-      "id": 3,
-      "title": "officia porro iure quia iusto qui ipsa ut modi",
-      "url": "https://picsum.photos/id/80/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culp",
-      "thumbnailUrl": "https://picsum.photos/id/80/500"
-    },
-    {
-      "albumId": 1,
       "id": 6,
       "title": "accusamus ea aliquid et amet sequi nemo",
       "url": "https://picsum.photos/id/84/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
+      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2",
+      "price": 159
     },
     {
       "albumId": 1,
@@ -22,7 +15,8 @@
       "title": "officia delectus consequatur vero aut veniam explicabo molestias",
       "url": "https://picsum.photos/id/87/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc"
+      "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc",
+      "price": 135
     },
     {
       "albumId": 1,
@@ -30,7 +24,8 @@
       "title": "aut porro officiis laborum odit ea laudantium corporis",
       "url": "https://picsum.photos/id/88/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/54176f"
+      "thumbnailUrl": "https://via.placeholder.com/150/54176f",
+      "price": 150
     },
     {
       "albumId": 1,
@@ -38,7 +33,8 @@
       "title": "beatae et provident et ut vel",
       "url": "https://picsum.photos/id/90/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/810b14"
+      "thumbnailUrl": "https://via.placeholder.com/150/810b14",
+      "price": 120
     },
     {
       "albumId": 1,
@@ -46,7 +42,8 @@
       "title": "nihil at amet non hic quia que",
       "url": "https://picsum.photos/id/101/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://picsum.photos/id/101/500"
+      "thumbnailUrl": "https://picsum.photos/id/101/500",
+      "price": 160
     },
     {
       "albumId": 1,
@@ -54,7 +51,8 @@
       "title": "repudiandae iusto deleniti rerum",
       "url": "https://picsum.photos/id/110/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/197d29"
+      "thumbnailUrl": "https://via.placeholder.com/150/197d29",
+      "price": 100
     },
     {
       "albumId": 1,
@@ -62,7 +60,8 @@
       "title": "est necessitatibus architecto ut laborum",
       "url": "https://picsum.photos/id/112/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/61a65"
+      "thumbnailUrl": "https://via.placeholder.com/150/61a65",
+      "price": 200
     },
     {
       "albumId": 1,
@@ -70,7 +69,8 @@
       "title": "harum dicta similique quis dolore earum ex qui",
       "url": "https://picsum.photos/id/117/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/f9cee5"
+      "thumbnailUrl": "https://via.placeholder.com/150/f9cee5",
+      "price": 115
     },
     {
       "albumId": 1,
@@ -78,7 +78,8 @@
       "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
       "url": "https://picsum.photos/id/107/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e"
+      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e",
+      "price": 110
     },
     {
       "albumId": 1,
@@ -86,7 +87,8 @@
       "title": "natus doloribus necessitatibus ipsa",
       "url": "https://picsum.photos/id/125/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/9c184f"
+      "thumbnailUrl": "https://via.placeholder.com/150/9c184f",
+      "price": 120
     },
     {
       "albumId": 1,
@@ -94,7 +96,8 @@
       "title": "laboriosam odit nam necessitatibus et illum dolores reiciendis",
       "url": "https://picsum.photos/id/122/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/1fe46f"
+      "thumbnailUrl": "https://via.placeholder.com/150/1fe46f",
+      "price": 140
     }
   ],
   "users": [
@@ -154,7 +157,7 @@
       "phone": "12345678",
       "password": "0000",
       "role": [
-        "user"
+        "admin"
       ],
       "id": 6
     },
@@ -204,7 +207,7 @@
       "phone": "12345678",
       "password": "12345678",
       "role": [
-        "user"
+        "admin"
       ],
       "id": 11
     }

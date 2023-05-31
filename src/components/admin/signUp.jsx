@@ -50,7 +50,7 @@ export default function SignUp() {
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h5" color="secondary">
             Sign up
           </Typography>
           <Box
@@ -62,42 +62,48 @@ export default function SignUp() {
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
+                color="secondary"
                   autoComplete="given-name"
                   name="firstName"
                   required
                   fullWidth
                   id="firstName"
                   label="First Name"
-                  autoFocus
+                  focused
                   {...register("name")}
                 />
               </Grid>
 
               <Grid item xs={12}>
                 <TextField
+                color="secondary"
                   required
                   fullWidth
                   id="email"
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  focused
                   {...register("email")}
                 />
               </Grid>
 
               <Grid item xs={12}>
                 <TextField
+                color="secondary"
                   required
                   fullWidth
                   id="phone"
                   label="phone"
                   name="phone"
                   autoComplete="phone"
+                  focused
                   {...register("phone")}
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                color="secondary"
                   required
                   fullWidth
                   name="password"
@@ -105,6 +111,7 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                  focused
                   {...register("password")}
                 />
               </Grid>
@@ -118,8 +125,8 @@ export default function SignUp() {
               Sign Up
             </Button>
             <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link sx={{ color: "red" }} to="/signin" variant="body2">
+              <Grid item sx={{ color:"#9C27B0"}}>
+                <Link sx={{ color: "red" }} to="/signin" variant="body2" >
                   Already have an account? Sign in
                 </Link>
               </Grid>
