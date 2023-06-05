@@ -16,17 +16,50 @@ import SignIn from "./components/admin/signIn";
 import PrivateRoute from "./components/privateRoute";
 import Availabilities from "./components/admin/availabilities";
 function App() {
+  const routes = [
+    {
+      name: "/",
+      path: <Home />,
+    },
+    {
+      name: "/basket",
+      path: <Basket />,
+    },
+    {
+      name: "/article/details/:id",
+      path: <ArticleDetails />,
+    },
+    {
+      name: "/signup",
+      path: <SignUp />,
+    },
+    {
+      name: "/signin",
+      path: <SignIn />,
+    },
+    {
+      name: "/availabilities",
+      path: <Availabilities />,
+    },
+    {
+      name: "*",
+      path: <Home />,
+    },
+  ];
+
   return (
     <>
       <Routes>
         <Route path="/" element={<Main />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/basket" element={<Basket />} />
-          <Route path="/article/details/:id" element={<ArticleDetails />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/availabilities" element={<Availabilities />} />
-          
+          {routes.map((component, index) => {
+            return (
+              <Route
+                path={component.name}
+                key={index}
+                element={component.path}
+              />
+            );
+          })}
         </Route>
 
         <Route path="/dashboard" element={<PrivateRoute />}>

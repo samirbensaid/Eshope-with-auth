@@ -70,7 +70,7 @@ export default function EditArticle() {
         </label>
         <input
         placeholder="0"
-          type="number"
+          type="text"
           id="small-input"
           //name="title"
           {...register("price")} 

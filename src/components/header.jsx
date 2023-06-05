@@ -7,7 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import useAuth from "./zustand/useAuth";
-import useBasket from "./zustand/zustandBasket";
+import useBasket from "./zustand/useBasket";
 import { Button } from "@mui/material";
 
 export default function Header() {
@@ -156,7 +156,7 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       to={item.path}
-                      className={`block py-2 pl-3 pr-4 rounded hover:bg-red-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                      className={`block py-2 pl-3 pr-4 underline rounded hover:bg-red-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                       aria-current="page"
                       style={{ color: item.color }}
                     >

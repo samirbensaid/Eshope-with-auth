@@ -1,6 +1,6 @@
 import { Alert } from "@mui/material";
 import { useState } from "react";
-import useBasket from "./zustand/zustandBasket";
+import useBasket from "./zustand/useBasket";
 // import { useNavigate } from "react-router-dom";
 
 import Box from "@mui/joy/Box";
@@ -12,11 +12,16 @@ import DeleteForever from "@mui/icons-material/DeleteForever";
 import WarningRoundedIcon from "@mui/icons-material/WarningRounded";
 import Typography from "@mui/joy/Typography";
 import { toast, Toaster } from "react-hot-toast";
+import useMode from "./zustand/useMode";
 
 export default function Basket() {
   const { basket, reset, deleteOne, edit, calculeTotal } = useBasket();
 
+  const { mode } = useMode();
+
   const [open, setOpen] = useState(false);
+
+
   //const [totalPrice, setTotalPrice] = useState(0);
 
   //   const navigate = useNavigate();
@@ -31,10 +36,10 @@ export default function Basket() {
   // useEffect(() => {
   //   calculeTotal();
   // }, []);
-
+ 
   return (
-    <div>
-      <Toaster position="bottom-right" reverseOrder={false} />
+    <div className="h-[70vh]">
+<Toaster position="bottom-right" reverseOrder={false} />
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         {basket.length > 0 ? (
           <div>
@@ -91,7 +96,7 @@ export default function Basket() {
                     color="danger"
                     onClick={() => {
                       reset();
-                      calculeTotal();
+                     
                     }}
                   >
                     Discard notes
@@ -144,9 +149,7 @@ export default function Basket() {
                             className="inline-flex items-center p-1 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                             type="button"
                             onClick={() => {
-                              //   let value = document.querySelector(
-                              //     "#product_" + index
-                              //   ).value;
+                            
 
                               let elem = document.querySelector(
                                 "#product_" + index
@@ -194,9 +197,7 @@ export default function Basket() {
                             className="inline-flex items-center p-1 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                             type="button"
                             onClick={() => {
-                              //   let value = document.querySelector(
-                              //     "#product_" + index
-                              //   ).value;
+                  
 
                               let elem = document.querySelector(
                                 "#product_" + index
@@ -230,7 +231,7 @@ export default function Basket() {
                           onClick={() => {
                             calculeTotal();
                             deleteOne(index);
-                            // navigate("/basket");
+                           
                             toast.error("Product deleted with succes.", {
                               style: {
                                 border: "1px solid red",
@@ -261,10 +262,17 @@ export default function Basket() {
         )}
       </div>
       <div className="text-right">
-        <div className="font-bold text-2xl text-right mt-5 mr-5">
-          Total : {calculeTotal()} $
-        </div>
+        {mode ? (
+          <div className=" font-bold text-2xl text-right mt-5 mr-5">
+            Total : {calculeTotal()} $
+          </div>
+        ) : (
+          <div className="text-white font-bold text-2xl text-right mt-5 mr-5">
+            Total : {calculeTotal()} $
+          </div>
+        )}
       </div>
+      
     </div>
   );
 }

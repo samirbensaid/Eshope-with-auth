@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import useMode from "../zustand/useMode";
-import useBasket from "../zustand/zustandBasket";
+import useBasket from "../zustand/useBasket";
 export default function Availabilities() {
   const [data, setData] = useState([]);
   const { mode, setMode } = useMode();

@@ -2,47 +2,11 @@
   "products": [
     {
       "albumId": 1,
-      "id": 6,
-      "title": "accusamus ea aliquid et amet sequi nemo",
-      "url": "https://picsum.photos/id/84/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2",
-      "price": 159
-    },
-    {
-      "albumId": 1,
-      "id": 7,
-      "title": "officia delectus consequatur vero aut veniam explicabo molestias",
-      "url": "https://picsum.photos/id/87/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc",
-      "price": 135
-    },
-    {
-      "albumId": 1,
-      "id": 8,
-      "title": "aut porro officiis laborum odit ea laudantium corporis",
-      "url": "https://picsum.photos/id/88/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/54176f",
-      "price": 150
-    },
-    {
-      "albumId": 1,
-      "id": 10,
-      "title": "beatae et provident et ut vel",
-      "url": "https://picsum.photos/id/90/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/810b14",
-      "price": 120
-    },
-    {
-      "albumId": 1,
       "id": 11,
       "title": "nihil at amet non hic quia que",
-      "url": "https://picsum.photos/id/101/500",
+      "url": "https://picsum.photos/id/109/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://picsum.photos/id/101/500",
+      "thumbnailUrl": "https://picsum.photos/id/109/500",
       "price": 160
     },
     {
@@ -83,21 +47,48 @@
     },
     {
       "albumId": 1,
-      "id": 17,
-      "title": "natus doloribus necessitatibus ipsa",
-      "url": "https://picsum.photos/id/125/500",
+      "id": 14,
+      "title": "est necessitatibus architecto ut laborum",
+      "url": "https://picsum.photos/id/112/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/9c184f",
-      "price": 120
+      "thumbnailUrl": "https://via.placeholder.com/150/61a65",
+      "price": 200
     },
     {
       "albumId": 1,
-      "id": 18,
-      "title": "laboriosam odit nam necessitatibus et illum dolores reiciendis",
-      "url": "https://picsum.photos/id/122/500",
+      "id": 15,
+      "title": "harum dicta similique quis dolore earum ex qui",
+      "url": "https://picsum.photos/id/117/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/1fe46f",
-      "price": 140
+      "thumbnailUrl": "https://via.placeholder.com/150/f9cee5",
+      "price": 115
+    },
+    {
+      "albumId": 1,
+      "id": 16,
+      "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
+      "url": "https://picsum.photos/id/107/500",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
+      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e",
+      "price": 110
+    },
+    {
+      "albumId": 1,
+      "title": "jhlkijlkmkjomol",
+      "url": "https://picsum.photos/id/140/500",
+      "description": "lkjhomkùmokp$ù;:!lkpoklk,ùp;,!:kjpl",
+      "thumbnailUrl": "https://picsum.photos/id/140/500",
+      "price": "15.235",
+      "id": 20
+    },
+    {
+      "albumId": 1,
+      "title": "serfgsxdrydtgfy",
+      "url": "https://picsum.photos/id/140/500",
+      "description": "ytsdyghjftugshrxtyrtxhysrthy",
+      "thumbnailUrl": "https://picsum.photos/id/140/500",
+      "price": "533412",
+      "id": 21
     }
   ],
   "users": [
@@ -118,7 +109,7 @@
       "password": "123456789",
       "phone": "1-770-736-8031 x56442",
       "role": [
-        "user"
+        "admin"
       ]
     },
     {

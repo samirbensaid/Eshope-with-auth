@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import useBasket from "./zustand/zustandBasket";
+import useBasket from "./zustand/useBasket";
 import useAuth from "./zustand/useAuth";
 import useMode from "./zustand/useMode";
 import axios from "axios";

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
-import useBasket from "./zustand/zustandBasket";
+import useBasket from "./zustand/useBasket";
 import { toast, Toaster } from "react-hot-toast";
 // import { useNavigate } from "react-router-dom";
 export default function ArticleDetails() {
@@ -137,11 +137,10 @@ export default function ArticleDetails() {
               <p className="leading-relaxed pb-4">{data.description}</p>
               <p className="font-bold text-3xl">Price(u) : {data.price} $</p>
               <div className="flex gap-8 pt-8">
-              
                 <p className="font-bold text-4xl">{count}</p>
                 <button
                   onClick={() => {
-                    if (count > 0) setCount(count - 1);
+                    if (count > 1) setCount(count - 1);
                   }}
                   className="border px-4"
                 >

@@ -56,7 +56,6 @@ export default function Home() {
           inputProps={{ "aria-label": "Search products" }}
           onChange={(e) => {
             search(e);
-            // search(e);
           }}
         />
         <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
