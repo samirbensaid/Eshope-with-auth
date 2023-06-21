@@ -9,18 +9,18 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 export default function Header() {
-  const { user, removeUser } = useAuth();
+  const { user, removeUser,setUser } = useAuth();
   const { mode, setMode } = useMode();
   const { basket } = useBasket();
 
- 
 
-  
+
 
 
 
 
   const logout = async () => {
+    refreshToken();
     let userData = JSON.parse(window.localStorage.getItem("user"));
     console.log(userData);
     const config = {

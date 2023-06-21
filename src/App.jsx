@@ -2,6 +2,7 @@ import "./App.css";
 import "./index.css";
 
 import Main from "./components/main";
+import axios from "axios";
 import Home from "./components/home";
 import { Route, Routes } from "react-router-dom";
 import ArticleDetails from "./components/articleDetails";
@@ -15,7 +16,10 @@ import SignUp from "./components/admin/signUp";
 import SignIn from "./components/admin/signIn";
 import PrivateRoute from "./components/privateRoute";
 import Availabilities from "./components/admin/availabilities";
+import useAuth from "./components/zustand/useAuth";
 function App() {
+  let { user, setUser } = useAuth();
+
   const routes = [
     {
       name: "/",

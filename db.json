@@ -2,15 +2,6 @@
   "products": [
     {
       "albumId": 1,
-      "id": 11,
-      "title": "nihil at amet non hic quia que",
-      "url": "https://picsum.photos/id/109/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://picsum.photos/id/109/500",
-      "price": 160
-    },
-    {
-      "albumId": 1,
       "id": 13,
       "title": "repudiandae iusto deleniti rerum",
       "url": "https://picsum.photos/id/110/500",
@@ -89,6 +80,15 @@
       "thumbnailUrl": "https://picsum.photos/id/140/500",
       "price": "533412",
       "id": 21
+    },
+    {
+      "albumId": 1,
+      "title": "vfiuvhjoivo",
+      "url": "https://picsum.photos/id/140/500",
+      "description": "hophhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+      "thumbnailUrl": "https://picsum.photos/id/140/500",
+      "price": "100.5",
+      "id": 22
     }
   ],
   "users": [
@@ -168,7 +168,7 @@
       "phone": "12345678",
       "password": "00000",
       "role": [
-        "user"
+        "admin"
       ],
       "id": 8
     },
@@ -201,6 +201,17 @@
         "admin"
       ],
       "id": 11
+    },
+    {
+      "name": "ahmed",
+      "email": "sair.said90@gmail.com",
+      "phone": "12345678",
+      "password": "0000",
+      "role": [
+        "user"
+      ],
+      "id": 12
     }
+   
   ]
 }

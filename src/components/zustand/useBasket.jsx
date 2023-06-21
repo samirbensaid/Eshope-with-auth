@@ -30,6 +30,13 @@ const useBasket = create((set, get) => ({
 
     window.localStorage.setItem("myBasket", JSON.stringify(get().basket));
   },
+  changeState: (x) => {
+    set(() => ({
+      basket:x,
+    }));
+
+   
+  },
   edit: (index, value) => {
     // set((state) => {
     //   state.basket[index].count = value;

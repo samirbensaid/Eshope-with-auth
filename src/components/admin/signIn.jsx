@@ -43,6 +43,7 @@ export default function SignIn() {
         email: response.data.user.email,
         phone: response.data.user.phone,
         token: response.data.token,
+        refreshToken: response.data.refresh_token,
         roles: response.data.user.roles,
       };
 
@@ -145,11 +146,6 @@ export default function SignIn() {
     </ThemeProvider>
   );
 }
-
-
-
-
-
 
 // import React, { useState } from "react";
 // import { useForm } from "react-hook-form";

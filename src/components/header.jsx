@@ -11,7 +11,7 @@ import useBasket from "./zustand/useBasket";
 import { Button } from "@mui/material";
 
 export default function Header() {
-  const { user, removeUser } = useAuth();
+  const { user, removeUser, setUser } = useAuth();
   const { mode, setMode } = useMode();
   const { basket } = useBasket();
   const location = useLocation();
@@ -86,7 +86,37 @@ export default function Header() {
     },
   ];
 
+  // --------------------------------------------
+
+  const refreshToken = async () => {
+    try {
+      const response = await axios.post(
+        "https://reals-api-staging.ewm.dev/api/token/refresh",
+        {
+          token: user.token,
+          refresh_token: user.refreshToken,
+        }
+      );
+      console.log(response);
+      const newUser = {
+        name: response.data.user.firstname,
+        email: response.data.user.email,
+        phone: response.data.user.phone,
+        token: response.data.token,
+        refreshToken: response.data.refresh_token,
+        roles: response.data.user.roles,
+      };
+      console.log("new", newUser);
+      setUser(newUser);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  // --------------------------------------------
+
   const logout = async () => {
+    refreshToken();
     let userData = JSON.parse(window.localStorage.getItem("user"));
     console.log(userData);
     const config = {
