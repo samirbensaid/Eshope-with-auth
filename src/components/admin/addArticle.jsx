@@ -4,16 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
-
-
-
-
 export default function AddArticle() {
-
-  
-
-
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
   const [errors, setErrors] = useState([]);
@@ -22,7 +13,7 @@ export default function AddArticle() {
     if (data.title.length < 6) {
       listError.push("Title must be more then 5 characters");
     }
-    if (typeof data.price !== "number" && data.price <= 0) {
+    if (Number.isNaN(parseFloat(data.price)) || data.price <= 0) {
       listError.push("Insert valid price");
     }
     if (data.img === "") {
@@ -31,7 +22,6 @@ export default function AddArticle() {
     if (data.description.length <= 20) {
       listError.push("description must be more then 20 characters");
     }
-
     let newProduct = {
       albumId: 1,
       title: data.title,
@@ -40,7 +30,6 @@ export default function AddArticle() {
       thumbnailUrl: data.img,
       price: data.price,
     };
-
     if (listError.length === 0) {
       try {
         await axios.post("http://localhost:3000/products", newProduct);
@@ -56,11 +45,6 @@ export default function AddArticle() {
 
   return (
     <div>
-
-
-
-
-
       <h1 className="underline font-bold mb-4">Add product </h1>
 
       {errors.map((item, index) => (

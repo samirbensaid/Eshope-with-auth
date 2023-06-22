@@ -257,7 +257,7 @@ export default function Basket() {
       </div>
       <div className="text-right">
         {mode ? (
-          <div className=" font-bold text-2xl text-right mt-5 mr-5">
+          <div className=" font-bold text-2xl text-right mt-5 mr-5 dark:text-white ">
             Total : {calculeTotal()} $
           </div>
         ) : (

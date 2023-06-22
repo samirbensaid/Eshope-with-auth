@@ -89,6 +89,24 @@
       "thumbnailUrl": "https://picsum.photos/id/140/500",
       "price": "100.5",
       "id": 22
+    },
+    {
+      "albumId": 1,
+      "title": "ooooooooooooooooooooooooo",
+      "url": "https://picsum.photos/id/80/500",
+      "description": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+      "thumbnailUrl": "https://picsum.photos/id/80/500",
+      "price": "10.5",
+      "id": 23
+    },
+    {
+      "albumId": 1,
+      "title": "eazezaezae",
+      "url": "azaezaeza",
+      "description": "zezaezaezaeazeeeeeeeeeeeeeeee",
+      "thumbnailUrl": "azaezaeza",
+      "price": "zezaeza",
+      "id": 24
     }
   ],
   "users": [
@@ -119,7 +137,7 @@
       "password": "123456789",
       "phone": "1-770-736-8031 x56442",
       "role": [
-        "user"
+        "admin"
       ]
     },
     {
@@ -212,6 +230,5 @@
       ],
       "id": 12
     }
-   
   ]
 }
