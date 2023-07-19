@@ -123,7 +123,7 @@ export default function Aside() {
           <li>
             <Link
               onClick={() => setOpen(true)}
-              className="text-red-500 flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-400 dark:hover:bg-gray-700"
+              className="text-red-500 flex items-center p-2 rounded-lg dark:text-white hover:bg-gray-400 dark:hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"

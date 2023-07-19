@@ -6,8 +6,10 @@
       "title": "repudiandae iusto deleniti rerum",
       "url": "https://picsum.photos/id/110/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/197d29",
-      "price": 100
+      "thumbnailUrl": "https://picsum.photos/id/110/500",
+      "price": 100,
+      "promotion": 10,
+      "quantity": "5"
     },
     {
       "albumId": 1,
@@ -15,8 +17,10 @@
       "title": "est necessitatibus architecto ut laborum",
       "url": "https://picsum.photos/id/112/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/61a65",
-      "price": 200
+      "thumbnailUrl": "https://picsum.photos/id/112/500",
+      "price": 200,
+      "promotion": 0,
+      "quantity": "0"
     },
     {
       "albumId": 1,
@@ -24,8 +28,10 @@
       "title": "harum dicta similique quis dolore earum ex qui",
       "url": "https://picsum.photos/id/117/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/f9cee5",
-      "price": 115
+      "thumbnailUrl": "https://picsum.photos/id/117/500",
+      "price": 115,
+      "promotion": 5,
+      "quantity": "9"
     },
     {
       "albumId": 1,
@@ -33,53 +39,10 @@
       "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
       "url": "https://picsum.photos/id/107/500",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e",
-      "price": 110
-    },
-    {
-      "albumId": 1,
-      "id": 14,
-      "title": "est necessitatibus architecto ut laborum",
-      "url": "https://picsum.photos/id/112/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/61a65",
-      "price": 200
-    },
-    {
-      "albumId": 1,
-      "id": 15,
-      "title": "harum dicta similique quis dolore earum ex qui",
-      "url": "https://picsum.photos/id/117/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/f9cee5",
-      "price": 115
-    },
-    {
-      "albumId": 1,
-      "id": 16,
-      "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
-      "url": "https://picsum.photos/id/107/500",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste esse id.  labore culpa",
-      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e",
-      "price": 110
-    },
-    {
-      "albumId": 1,
-      "title": "jhlkijlkmkjomol",
-      "url": "https://picsum.photos/id/140/500",
-      "description": "lkjhomkùmokp$ù;:!lkpoklk,ùp;,!:kjpl",
-      "thumbnailUrl": "https://picsum.photos/id/140/500",
-      "price": "15.235",
-      "id": 20
-    },
-    {
-      "albumId": 1,
-      "title": "serfgsxdrydtgfy",
-      "url": "https://picsum.photos/id/140/500",
-      "description": "ytsdyghjftugshrxtyrtxhysrthy",
-      "thumbnailUrl": "https://picsum.photos/id/140/500",
-      "price": "533412",
-      "id": 21
+      "thumbnailUrl": "https://picsum.photos/id/107/500",
+      "price": 110,
+      "promotion": 0,
+      "quantity": "0"
     },
     {
       "albumId": 1,
@@ -88,25 +51,152 @@
       "description": "hophhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
       "thumbnailUrl": "https://picsum.photos/id/140/500",
       "price": "100.5",
-      "id": 22
+      "promotion": 0,
+      "id": 22,
+      "quantity": "0"
     },
     {
       "albumId": 1,
-      "title": "ooooooooooooooooooooooooo",
+      "title": "ggggggggggggggggggggggggggggggggggggg",
+      "url": "https://picsum.photos/id/115/500",
+      "description": "eeeeeeeeeeeeeeeeeeeezfdddd<sdwwwwwwwwwwwwwwwwwwww",
+      "thumbnailUrl": "https://picsum.photos/id/115/500",
+      "price": "2.5",
+      "promotion": 0,
+      "id": 25,
+      "quantity": "6"
+    },
+    {
+      "albumId": 1,
+      "title": "saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssss",
       "url": "https://picsum.photos/id/80/500",
-      "description": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+      "description": "gfhfcgvuymkhjùljk§§§§§§§§§§§§§§§khjh;gjhgfbgffdgdbfcthyh",
       "thumbnailUrl": "https://picsum.photos/id/80/500",
-      "price": "10.5",
-      "id": 23
+      "price": "55",
+      "promotion": 0,
+      "quantity": "122",
+      "id": 26
     },
     {
       "albumId": 1,
-      "title": "eazezaezae",
-      "url": "azaezaeza",
-      "description": "zezaezaezaeazeeeeeeeeeeeeeeee",
-      "thumbnailUrl": "azaezaeza",
-      "price": "zezaeza",
-      "id": 24
+      "title": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "url": "https://picsum.photos/id/115/500",
+      "description": "fghjkkkkkkkkkkkkkl!jm klllllllllllllllllllllllllllllllllllllllllllllllll njkkkkkkkkkkkkkkkkj",
+      "thumbnailUrl": "https://picsum.photos/id/115/500",
+      "price": "12.3",
+      "promotion": 0,
+      "quantity": "12",
+      "id": 27
+    },
+    {
+      "albumId": 1,
+      "title": "lijqsmoidjomqisjdoilk",
+      "url": "https://picsum.photos/id/140/500",
+      "description": "dddddddddddddddddddddddddddddddddddddd",
+      "thumbnailUrl": "https://picsum.photos/id/140/500",
+      "price": "15.235",
+      "promotion": 0,
+      "quantity": 10,
+      "id": 30
+    },
+    {
+      "albumId": 1,
+      "title": "sfdf<sdffffffffffffffffffffffffffffffffffffffff",
+      "url": "https://picsum.photos/id/137/500",
+      "description": "dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "thumbnailUrl": "https://picsum.photos/id/137/500",
+      "price": "111111",
+      "promotion": 0,
+      "quantity": 10,
+      "id": 32
+    },
+    {
+      "albumId": 1,
+      "title": "efefdfffffffffffffffffffffffffffffffffffffffffffff",
+      "url": "https://picsum.photos/id/135/500",
+      "description": "fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "thumbnailUrl": "https://picsum.photos/id/135/500",
+      "price": "533412",
+      "promotion": 0,
+      "quantity": 88,
+      "id": 33
+    },
+    {
+      "albumId": 1,
+      "title": "sssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "url": "https://picsum.photos/id/115/500",
+      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "thumbnailUrl": "https://picsum.photos/id/115/500",
+      "price": "15.235",
+      "promotion": 0,
+      "quantity": 10,
+      "id": 34
+    },
+    {
+      "albumId": 1,
+      "title": "rfdv<sfdsdfgv<sfv",
+      "url": "https://picsum.photos/id/117/500",
+      "description": "gbwcvbcvxw F<SRESTWYTDUXFJKCGJGKWXFJGKCJ",
+      "thumbnailUrl": "https://picsum.photos/id/117/500",
+      "price": "15.235",
+      "promotion": 0,
+      "quantity": 10,
+      "id": 37
+    },
+    {
+      "albumId": 1,
+      "title": "test promotion ",
+      "url": "https://picsum.photos/id/135/500",
+      "description": "dgggghhhhhhhhhhhhhhhhhhhhhhhhdfghhhhhhhhhhhhhhhhgg",
+      "thumbnailUrl": "https://picsum.photos/id/135/500",
+      "price": "100",
+      "promotion": "15",
+      "quantity": 12,
+      "id": 38
+    },
+    {
+      "albumId": 1,
+      "title": "rdggsrezeq",
+      "url": "https://picsum.photos/id/140/500",
+      "description": "esfghvgfdfdsqdfghj,jhgffddsqsfghgjhn,",
+      "thumbnailUrl": "https://picsum.photos/id/140/500",
+      "price": "100",
+      "promotion": 0,
+      "quantity": 12,
+      "id": 39
+    },
+    {
+      "albumId": 1,
+      "title": "ezzzzzzzzzzzzzzzzeeeeeeeeeeeeeeeeeeeee",
+      "url": "https://picsum.photos/id/118/500",
+      "description": "efedfsdfdlflkf lk,fldk,fl kdk,fù<df ",
+      "thumbnailUrl": "https://picsum.photos/id/118/500",
+      "price": "15.235",
+      "promotion": 0,
+      "quantity": 10,
+      "id": 40
+    },
+    {
+      "albumId": 1,
+      "title": "fffffffffffffffffffffffffffffffffffffffff",
+      "url": "https://picsum.photos/id/137/500",
+      "description": "fefzllij lkjjiJD LIJsiD LIJOSIJDLsDD LIKJOISKJ D",
+      "thumbnailUrl": "https://picsum.photos/id/137/500",
+      "price": "53",
+      "promotion": "10",
+      "quantity": 12,
+      "id": 41
+    },
+    {
+      "albumId": 1,
+      "title": "test 1",
+      "url": "https://picsum.photos/id/139/500",
+      "description": "dfqsdfqsdfdsfsdfsdqfqsdfsdffdsfcvc",
+      "thumbnailUrl": "https://picsum.photos/id/139/500",
+      "price": "80",
+      "promotion": "8",
+      "quantity": 10,
+      "id": 42
     }
   ],
   "users": [
@@ -127,7 +217,7 @@
       "password": "123456789",
       "phone": "1-770-736-8031 x56442",
       "role": [
-        "admin"
+        "user"
       ]
     },
     {
@@ -147,7 +237,7 @@
       "password": "123456789",
       "phone": "1-770-736-8031 x56442",
       "role": [
-        "admin"
+        "user"
       ]
     },
     {
@@ -176,7 +266,7 @@
       "phone": "12345678",
       "password": "1212121",
       "role": [
-        "admin"
+        "user"
       ],
       "id": 7
     },

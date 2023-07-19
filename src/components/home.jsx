@@ -25,6 +25,7 @@ export default function Home() {
   };
   useEffect(() => {
     fetchData();
+   
   }, []);
 
   const search = (event) => {

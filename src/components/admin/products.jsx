@@ -112,7 +112,14 @@ export default function Products() {
                   Name
                 </th>
                 <th scope="col" className="px-6 py-3">
+                quantity
+                </th>
+                <th scope="col" className="px-6 py-3">
                   price
+                </th>
+
+                <th scope="col" className="px-6 py-3">
+                promotion
                 </th>
 
                 <th scope="col" className="px-6 py-3">
@@ -142,7 +149,11 @@ export default function Products() {
                         </div>
                       </div>
                     </td>
+                    <td className="pl-14 py-4 font-bold">{article.quantity} </td>
                     <td className="px-6 py-4 font-bold">{article.price} $</td>
+                    <td className="pl-16 py-4 font-bold">{article.promotion} %</td>
+
+                    
 
                     <td className="px-6 py-4 flex gap-6">
                       <Link to={"/dashboard/editarticle/" + article.id}>

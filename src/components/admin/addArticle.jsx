@@ -16,6 +16,11 @@ export default function AddArticle() {
     if (Number.isNaN(parseFloat(data.price)) || data.price <= 0) {
       listError.push("Insert valid price");
     }
+
+    if (Number.isNaN(parseInt(data.quantity)) || data.quantity <= 0) {
+      listError.push("Insert valid quantity");
+    }
+
     if (data.img === "") {
       listError.push("Url can't be empty !");
     }
@@ -29,7 +34,10 @@ export default function AddArticle() {
       description: data.description,
       thumbnailUrl: data.img,
       price: data.price,
+      promotion: data.promotion?data.promotion:0,
+      quantity: parseInt(data.quantity),
     };
+
     if (listError.length === 0) {
       try {
         await axios.post("http://localhost:3000/products", newProduct);
@@ -39,7 +47,6 @@ export default function AddArticle() {
       }
     } else {
       setErrors(listError);
-      console.log(listError);
     }
   };
 
@@ -67,18 +74,55 @@ export default function AddArticle() {
           className="block w-full p-2 mb-5 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
 
+
+
+        <div className="flex">
+          <label
+            htmlFor="small-input"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white mr-4"
+          >
+            Price:
+          </label>
+          <input
+            placeholder="0"
+            type="text"
+            id="small-input"
+            //name="title"
+            {...register("price")}
+            className="block w-[45%] mr-7 p-2 mb-5 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+
+          <label
+            htmlFor="small-input"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white mr-4"
+          >
+            promotion:
+          </label>
+          <input
+            placeholder="0"
+            type="text"
+            id="small-input"
+            //name="title"
+            {...register("promotion")}
+            className="block w-[4%]  p-2 mb-5 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+          <span className="ml-2 mt-1"> % </span>
+        </div>
+
+
+
         <label
           htmlFor="small-input"
           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
         >
-          Price
+          quantity
         </label>
         <input
           placeholder="0"
           type="text"
           id="small-input"
           //name="title"
-          {...register("price")}
+          {...register("quantity")}
           className="block w-full p-2 mb-5 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
 

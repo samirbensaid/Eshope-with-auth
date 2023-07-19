@@ -13,9 +13,14 @@ const useBasket = create((set, get) => ({
     });
     if (test) {
       set((state) => ({ basket: [...state.basket, x] }));
+      
     }
     window.localStorage.setItem("myBasket", JSON.stringify(get().basket));
+  
   },
+
+
+  
   //  deleteOne: (y) => set((state) => ({ basket: state.basket.splice(y, 1) })),
   //   reset: () => set({ basket: [] }),
   reset: () => {
@@ -29,6 +34,7 @@ const useBasket = create((set, get) => ({
 
     window.localStorage.setItem("myBasket", JSON.stringify(get().basket));
   },
+
   edit: (index, value) => {
     // set((state) => {
     //   state.basket[index].count = value;
@@ -43,10 +49,13 @@ const useBasket = create((set, get) => ({
   },
   calculeTotal: () => {
     let total = 0;
+    
     get().basket.map((article) => {
-      total = total + parseFloat(article.price) * parseFloat(article.count);
+      total = total + parseFloat(article.price -(article.price * article.promotion) / 100) * parseFloat(article.count);
+     
     });
     return total;
+
   },
 }));
 

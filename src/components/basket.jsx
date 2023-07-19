@@ -117,6 +117,9 @@ export default function Basket() {
                     Price
                   </th>
                   <th scope="col" className="px-16 py-3">
+                    promotion (u)
+                  </th>
+                  <th scope="col" className="px-16 py-3">
                     Qty
                   </th>
 
@@ -139,7 +142,12 @@ export default function Basket() {
                         {article.title}
                       </td>
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                        {article.price} $
+                        {article.price -
+                          (article.price * article.promotion) / 100} $
+                      </td>
+
+                      <td className="pl-[8%] py-4 font-semibold text-gray-900 dark:text-white">
+                        {article.promotion} %
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center space-x-3">

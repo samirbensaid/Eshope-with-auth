@@ -137,11 +137,14 @@ export default function Header() {
     console.log(response.data);
   };
 
+
   if (!mode) {
     document.body.style.background = "#15202B";
   } else {
     document.body.style.background = "white";
   }
+
+  
 
   return (
     <nav className=" dark:text-white ">
@@ -181,6 +184,7 @@ export default function Header() {
         >
           <ul className="font-medium flex gap-1 flex-col p-4 md:p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8  md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {NavLinks.map((item, index) => {
+
               if (item.role.includes(role)) {
                 return (
                   <li key={index}>
@@ -197,7 +201,7 @@ export default function Header() {
               }
             })}
             {user.name && (
-              <li>
+              <li className="pl-[90%]">
                 <Button onClick={logout} variant="outlined" color="error">
                   LOGOUT
                 </Button>

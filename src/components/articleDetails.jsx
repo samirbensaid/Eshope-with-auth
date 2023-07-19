@@ -135,7 +135,46 @@ export default function ArticleDetails() {
                 </span>
               </div>
               <p className="leading-relaxed pb-4">{data.description}</p>
-              <p className="font-bold text-3xl">Price(u) : {data.price} $</p>
+              <div className="flex justify-between">
+                <div>
+                  {data.promotion > 0 ? (
+                    <p className="font-bold text-2xl">
+                      Price(u) :{" "}
+                      <span className="line-through text-red-500">
+                        {data.price} $
+                      </span>
+                      <br></br>
+                      <span className="text-green-600 rounded-md ml-24">
+                        {data.price - (data.price * data.promotion) / 100} ${" "}
+                      </span>
+                    </p>
+                  ) : (
+                    <p className="font-bold text-2xl">
+                      Price(u) : <span className="text-green-600">{data.price} $</span>
+                    </p>
+                  )}
+
+                  
+
+                  {data.quantity > 0 ? (
+                    <p className="font-bold text-2xl mt-8">
+                      Quantity :{" "}
+                      <span className="text-green-600"> {data.quantity} </span>
+                    </p>
+                  ) : (
+                    <p className="font-bold text-2xl">
+                      Quantity :{" "}
+                      <span className="text-red-600"> {data.quantity} </span>
+                    </p>
+                  )}
+                </div>
+                <p className="font-bold text-black underline text-2xl">
+                  {" "}
+                  promotion :
+                  <span className="text-orange-500"> {data.promotion} %</span>
+                </p>
+              </div>
+
               <div className="flex gap-8 pt-8">
                 <p className="font-bold text-4xl">{count}</p>
                 <button
@@ -147,7 +186,9 @@ export default function ArticleDetails() {
                   -
                 </button>
                 <button
-                  onClick={() => setCount(count + 1)}
+                  onClick={() => {
+                    if (count < data.quantity) setCount(count + 1);
+                  }}
                   className="border py-1 px-4"
                 >
                   +
@@ -155,43 +196,39 @@ export default function ArticleDetails() {
               </div>
 
               <div className="flex">
-                <button
-                  onClick={() => {
-                    add({
-                      title: data.title,
-                      id: data.id,
-                      img: data.url,
-                      count: count,
-                      price: data.price,
-                    });
-                    toast.success("Product Adding To Cart.", {
-                      style: {
-                        border: "1px solid green",
-                        padding: "30px",
-                        color: "green",
-                      },
-                      iconTheme: {
-                        primary: "green",
-                        secondary: "#FFFAEE",
-                      },
-                    });
-                  }}
-                  className="flex gap-3 ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded"
-                >
-                  <AddShoppingCart /> ADD
-                </button>
-                {/* <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
-                   <svg
-                    fill="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
+                {data.quantity == 0 ? (
+                  <button className="flex gap-3 ml-auto text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none rounded">
+                    <AddShoppingCart /> ADD
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      add({
+                        title: data.title,
+                        id: data.id,
+                        img: data.url,
+                        count: count,
+                        price: data.price,
+                        promotion: data.promotion,
+                      });
+                      toast.success("Product Adding To Cart.", {
+                        style: {
+                          border: "1px solid green",
+                          padding: "30px",
+                          color: "green",
+                        },
+
+                        iconTheme: {
+                          primary: "green",
+                          secondary: "#FFFAEE",
+                        },
+                      });
+                    }}
+                    className="flex gap-3 ml-auto text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded"
                   >
-                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
-                  </svg> 
-                </button> */}
+                    <AddShoppingCart /> ADD
+                  </button>
+                )}
               </div>
             </div>
           </div>
